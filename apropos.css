@@ -13,3 +13,7 @@ body{
     margin: 0;
     font-family: "JetBrains Mono", monospace;
 }
+main{
+    padding-left: 25%;
+    padding-right: 25%;
+}
