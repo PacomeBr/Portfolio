@@ -194,85 +194,107 @@ h2.section-title {
     /* ══════════════════════════════
        ABOUT SECTION
     ══════════════════════════════ */
-    .about {
-      margin-bottom: 56px;
-    }
- 
-    .about h1 {
-      font-family: var(--mono);
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 28px;
-      letter-spacing: -0.5px;
-    }
- 
-    .about-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px 28px 28px;
-    }
- 
-    .about-name {
-      font-family: var(--mono);
-      font-size: 1rem;
-      font-weight: 700;
-      color: #e8eaf6;
-      margin-bottom: 14px;
-    }
- 
-    .about-bio {
-      font-size: 0.875rem;
-      color: var(--text);
-      line-height: 1.75;
-      margin-bottom: 8px;
-    }
- 
-    .about-ellipsis {
-      color: var(--text-dim);
-      font-size: 1.1rem;
-      letter-spacing: 3px;
-      margin: 12px 0 20px;
-    }
- 
-    .btn-group {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
- 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-family: var(--mono);
-      font-size: 0.8rem;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      text-decoration: none;
-      transition: opacity .2s, transform .15s;
-    }
-    .btn:hover { opacity: .85; transform: translateY(-1px); }
-    .btn:active { transform: translateY(0); }
- 
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .btn-secondary {
-      background: transparent;
-      color: #e8eaf6;
-      border: 1.5px solid rgba(255,255,255,0.2);
-    }
- 
-    .btn-icon {
-      font-size: 1rem;
-    }
+.hero {
+    margin-bottom: 64px;
+    padding: 48px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 900px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(79,110,247,0.1);
+    border: 1px solid rgba(79,110,247,0.25);
+    border-radius: 99px;
+    padding: 5px 14px;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: #a0b4ff;
+    width: fit-content;
+}
+
+.hero-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4f6ef7;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.hero h1 {
+    font-family: var(--mono);
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero h1 .hero-name {
+    background: linear-gradient(90deg, #4f6ef7, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    max-width: 900px;
+    line-height: 1.7;
+}
+
+.hero-sub strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: opacity .2s, transform .15s;
+}
+.btn:hover { opacity: .85; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+.btn-secondary {
+    background: transparent;
+    color: #e8eaf6;
+    border: 1.5px solid rgba(255,255,255,0.2);
+}
+
+.btn-icon {
+    font-size: 1rem;
+}
+
  
     /* ══════════════════════════════
        SKILLS SECTION

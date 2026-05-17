@@ -6,53 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> a propos de moi</title>
   <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="apropos.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="acceuil.css">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
-  <header>
-
-    <nav class="navbar">
-      <h1>Pacôme Bray</h1>
-      <ul>
-        <li class="acceuil"><a href="accueil.html">1//Acceuil</a></li>
-        <li><a href="projet.html">2//Mes Projets</a></li>
-        <li><a href="apropos.html">3//À propos de moi</a></li>
-        <li><a class="contact" href="contact.html">4//Me Contacter</a></li>
-      </ul>
-
-    </nav>
-  </header>
+  <nav>
+    <div class="nav-bar">
+      <a href="#accueil" class="nav-logo">Pacôme Bray</a>
+      <div class="nav-links">
+        <a href="#accueil" class="nav-link active">
+          <i class="fa-solid fa-house"></i>
+          Acceuil
+        </a>
+        <a href="#projets" class="nav-link">
+          <i class="fa-solid fa-diagram-project"></i>
+          Mes Projets
+        </a>
+        <a href="contact.html" class="nav-link">
+          <i class="fa-solid fa-envelope"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
   <div class="container">
 
     <!-- ══ ABOUT ══ -->
-    <section class="about">
-      <h1>A propos de moi</h1>
-
-      <div class="about-card">
-        <p class="about-name">bonjour je m'appelle Pacôme Bray</p>
-        <p class="about-bio">
-          Amplificatis amplificatis comes quam rabie tuebatur matris ardore quam incohibili
-          amplificatis Seleuciae matris rabie matris incendebat comes concepta excidium rabie
-          ardore quam amplificatis incohibili amplificatis et desperatio in efferebantur
-          incohibili tuebatur rabie matris viribus tuebatur legiones viribus incendebat concepta
-          amplificatis et desperatio viribus quam quam concepta urbium tuebatur tuebatur.
-        </p>
-        <p class="about-ellipsis">...</p>
-
-        <div class="btn-group">
-          <a href="#" class="btn btn-primary">
-            télécharger CV
-            <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
-          </a>
-          <a href="#" class="btn btn-secondary">Me Contacter</a>
-        </div>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>
+      Bonjour, je suis<br>
+      <span class="hero-name">Pacôme Bray</span>
+    </h1>
+ 
+    <p class="hero-sub">
+      Étudiant en <strong>BUT Informatique</strong> à l'IUT2 de Grenoble.<br>
+      Passionné par le développement, le design et les nouvelles technologies.
+    </p>
+ 
+    <p class="hero-sub" style="margin-top:-8px;">
+      Amplificatis amplificatis comes quam rabie tuebatur matris ardore quam incohibili
+      amplificatis Seleuciae matris rabie matris incendebat comes concepta excidium rabie
+      ardore quam amplificatis incohibili amplificatis et desperatio in efferebantur
+      incohibili tuebatur rabie matris viribus tuebatur legiones viribus incendebat concepta
+      amplificatis et desperatio viribus quam quam concepta urbium tuebatur tuebatur.
+    </p>
+ 
+    <div class="btn-group">
+      <a href="#" class="btn btn-primary">
+        télécharger CV
+        <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+      </a>
+      <a href="#contact" class="btn btn-secondary">Me Contacter</a>
+    </div>
+  </section>
 
     <!-- ══ SKILLS ══ -->
     <section class="skills">

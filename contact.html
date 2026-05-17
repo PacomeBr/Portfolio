@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <a href="#accueil" class="nav-logo">Pacôme Bray</a>
+            <div class="nav-links">
+                <a href="acceuil.html" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                Acceuil
+                </a>
+                <a href="#projets" class="nav-link">
+                <i class="fa-solid fa-diagram-project"></i>
+                Mes Projets
+                </a>
+                <a href="#contact" class="nav-link active">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+<div class="container" id="contact">
+ 
+  <h2 class="section-title">Contact</h2>
+  <p class="section-subtitle">Une question, une opportunité ? Écrivez-moi.</p>
+ 
+  <!-- Cartes de contact rapide -->
+  <div class="contact-grid">
+    <a href="mailto:pacome.bray@gmail.com" class="contact-card">
+      <div class="contact-icon" style="background:rgba(79,110,247,0.12);">
+        <i class="fa-regular fa-envelope" style="color: #60a5fa;"></i>
+      </div>
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">pacome.bray@gmail.com</div>
+      </div>
+    </a>
+ 
+    <a href="https://github.com/PacomeBr" target="_blank" class="contact-card">
+        <div class="contact-icon" style="background:rgba(255,255,255,0.05);">
+            <i class="fa-brands fa-github" style="color: #c9d1e0;"></i>
+        </div>
+        <div class="contact-info">
+            <div class="contact-label">Github</div>
+            <div class="contact-value">https://github.com/PacomeBr</div>
+        </div>
+    </a>
+ 
+    <a href="https://linkedin.com" target="_blank" class="contact-card">
+        <div class="contact-icon" style="background:rgba(10,102,194,0.15);">
+            <i class="fa-brands fa-linkedin-in" style="color: #60a5fa;"></i>
+        </div>
+        <div class="contact-info">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/pacomebray</div>
+        </div>
+    </a>
+ 
+    <a href="#" class="contact-card">
+        <div class="contact-icon" style="background:rgba(255,255,255,0.05);">
+            <i class="fa-brands fa-gitlab" style="color: #fb923c;"></i>
+        </div>
+      <div class="contact-info">
+        <div class="contact-label">Gitlab</div>
+        <div class="contact-value">gitlab.com/pacomebray</div>
+      </div>
+    </a>
+  </div>
+ 
+  <!-- Formulaire -->
+  <div class="form-card">
+    <h3>// Envoyer un message</h3>
+ 
+    <div class="form-row">
+      <div class="form-group name-email">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" placeholder="Votre nom" />
+      </div>
+      <div class="form-group name-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="votre@email.com" />
+      </div>
+    </div>
+ 
+    <div class="form-group">
+      <label for="sujet">Sujet</label>
+      <select id="sujet">
+        <option value="" disabled selected>Choisir un sujet…</option>
+        <option>Proposition d'alternance</option>
+        <option>Collaboration / projet</option>
+        <option>Question générale</option>
+        <option>Autre</option>
+      </select>
+    </div>
+ 
+    <div class="form-group message-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Votre message…"></textarea>
+    </div>
+ 
+    <div class="form-footer">
+      <button class="btn btn-primary" onclick="handleSubmit()">
+        Envoyer
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+ 
+    <div class="success-msg" id="successMsg">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#86efac" stroke-width="1.6"/><path d="M8 12l3 3 5-5" stroke="#86efac" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Message envoyé ! Je vous répondrai dans les plus brefs délais.
+    </div>
+  </div>
+ 
+</div>
+
+</body>
+</html>
